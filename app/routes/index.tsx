@@ -1,9 +1,11 @@
 import { useState } from "react";
+import useMeasure from "react-use-measure";
 
 export default function Index() {
+  const [ref, bounds] = useMeasure();
   const [isLegal, setIsLegal] = useState(false);
   return (
-    <main className="min-h-full h-full">
+    <main ref={ref} className="min-h-full h-full">
       {!isLegal ? (
         <AreYouLegal onClick={() => setIsLegal(true)} />
       ) : (
@@ -15,7 +17,7 @@ export default function Index() {
           <FollowSteps />
           <GlowCodeBenefits />
           <Review />
-          <Survey />
+          <Survey width={bounds.width - 12} />
         </>
       )}
     </main>
@@ -269,16 +271,16 @@ const Review = () => {
   );
 };
 
-const Survey = () => {
+const Survey = ({ width }: { width: number }) => {
   return (
     <section
       id="survey"
-      className="flex items-center justify-center px-6 bg-light-pink py-[60px]"
+      className="flex items-center justify-center bg-light-pink py-[60px]"
     >
       <iframe
         title="Glow Code Survey"
         src="https://docs.google.com/forms/d/e/1FAIpQLSepMsdeHD1ks37YBzbBDIf7brh9RrQf6F6dTc85FSRGuL5MDw/viewform?embedded=true"
-        width="330"
+        width={width}
         height="1000"
       >
         Loading…
