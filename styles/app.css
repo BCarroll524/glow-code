@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .gradient1 {
+    background-image: linear-gradient(
+      210deg,
+      hsl(199deg 30% 60%) 0%,
+      hsl(199deg 29% 65%) 12%,
+      hsl(200deg 29% 69%) 25%,
+      hsl(200deg 29% 74%) 37%,
+      hsl(200deg 29% 78%) 50%,
+      hsl(200deg 29% 82%) 61%,
+      hsl(200deg 29% 87%) 72%,
+      hsl(200deg 29% 91%) 82%,
+      hsl(201deg 29% 96%) 91%,
+      hsl(0deg 0% 100%) 100%
+    );
+  }
+
+  .gradient2 {
+    background-image: linear-gradient(
+      160deg,
+      hsl(35deg 100% 39%) 0%,
+      hsl(32deg 66% 49%) 12%,
+      hsl(31deg 66% 57%) 25%,
+      hsl(30deg 69% 63%) 37%,
+      hsl(29deg 72% 70%) 50%,
+      hsl(28deg 75% 76%) 61%,
+      hsl(28deg 78% 82%) 72%,
+      hsl(27deg 82% 88%) 82%,
+      hsl(26deg 86% 94%) 91%,
+      hsl(0deg 0% 100%) 100%
+    );
+  }
+
+  .gradient3 {
+    background-image: linear-gradient(
+      160deg,
+      hsl(0deg 0% 100%) 1%,
+      hsl(2deg 100% 98%) 43%,
+      hsl(2deg 100% 96%) 50%,
+      hsl(2deg 100% 94%) 51%,
+      hsl(2deg 100% 92%) 51%,
+      hsl(1deg 100% 90%) 49%,
+      hsl(1deg 100% 88%) 49%,
+      hsl(1deg 99% 86%) 50%,
+      hsl(0deg 96% 84%) 57%,
+      hsl(0deg 94% 82%) 99%
+    );
+  }
+
+  .gradient4 {
+    background-image: linear-gradient(
+      180deg,
+      hsl(214deg 51% 70%) 0%,
+      hsl(210deg 67% 65%) 7%,
+      hsl(205deg 81% 57%) 20%,
+      hsl(202deg 98% 45%) 37%,
+      hsl(204deg 96% 42%) 55%,
+      hsl(214deg 57% 55%) 73%,
+      hsl(221deg 55% 79%) 88%,
+      hsl(0deg 0% 100%) 100%
+    );
+  }
+}

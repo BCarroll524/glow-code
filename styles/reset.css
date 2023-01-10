@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Nicky";
+  font-style: normal;
+  font-display: fallback;
+  src: url(/fonts/Nicky.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "InterTight";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(/fonts/InterTight-Regular.ttf) format("opentype");
+}
+
 /*
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
@@ -14,7 +29,7 @@ html,
 body {
   height: 100%;
   min-height: 100%;
-  font-family: "HKGrotesk", sans-serif;
+  font-family: "InterTight", sans-serif;
   scroll-behavior: smooth;
 }
 body {
